@@ -1,0 +1,12 @@
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\bin\Debug\net8.0\CustomerServiceCampaign.Application.deps.json
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\bin\Debug\net8.0\CustomerServiceCampaign.Application.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\bin\Debug\net8.0\CustomerServiceCampaign.Application.pdb
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\CustomerServiceCampaign.Application.csproj.AssemblyReference.cache
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\CustomerServiceCampaign.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\CustomerServiceCampaign.Application.AssemblyInfoInputs.cache
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\CustomerServiceCampaign.Application.AssemblyInfo.cs
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\CustomerServiceCampaign.Application.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\CustomerServiceCampaign.Application.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\refint\CustomerServiceCampaign.Application.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\CustomerServiceCampaign.Application.pdb
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Application\obj\Debug\net8.0\ref\CustomerServiceCampaign.Application.dll

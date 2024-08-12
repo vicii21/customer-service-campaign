@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "CustomerServiceCampaign.API.Controllers.AuthController",
+    "Method": "Post",
+    "RelativePath": "api/Auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "CustomerServiceCampaign.API.Jwt.AuthRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceCampaign.API.Controllers.AuthController",
+    "Method": "Delete",
+    "RelativePath": "api/Auth",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomerServiceCampaign.API.Controllers.DatabaseInputController",
+    "Method": "ImportDBDataFromSOAP",
+    "RelativePath": "api/DatabaseInput",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

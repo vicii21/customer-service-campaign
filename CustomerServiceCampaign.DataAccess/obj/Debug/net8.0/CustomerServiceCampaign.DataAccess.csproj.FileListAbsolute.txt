@@ -1,0 +1,17 @@
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\bin\Debug\net8.0\CustomerServiceCampaign.DataAccess.deps.json
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\bin\Debug\net8.0\CustomerServiceCampaign.DataAccess.runtimeconfig.json
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\bin\Debug\net8.0\CustomerServiceCampaign.DataAccess.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\bin\Debug\net8.0\CustomerServiceCampaign.DataAccess.pdb
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\bin\Debug\net8.0\CustomerServiceCampaign.Domain.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\bin\Debug\net8.0\CustomerServiceCampaign.Domain.pdb
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.AssemblyInfo.cs
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\Customer.BFC7CA6D.Up2Date
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\refint\CustomerServiceCampaign.DataAccess.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.pdb
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.genruntimeconfig.cache
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\ref\CustomerServiceCampaign.DataAccess.dll
