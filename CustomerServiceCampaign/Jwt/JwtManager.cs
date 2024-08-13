@@ -37,8 +37,6 @@ namespace CustomerServiceCampaign.API.Jwt
             int id = credentials.ID;
             List<int> useCases = credentials.Person.PersonUseCases.Select(x => x.UseCaseId).ToList();
 
-            //Header.Payload.Signature
-
             var tokenId = Guid.NewGuid().ToString();
 
             _storage.AddToken(tokenId);
@@ -49,7 +47,6 @@ namespace CustomerServiceCampaign.API.Jwt
                 new Claim(JwtRegisteredClaimNames.Iss, _settings.Issuer, ClaimValueTypes.String),
                 new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
                 new Claim("Id", id.ToString()),
-                //new Claim("FullName", credentials.Person.Name),
                 new Claim("Email", credentials.Email),
                 new Claim("UseCases", JsonConvert.SerializeObject(useCases))
             };

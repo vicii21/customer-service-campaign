@@ -11,6 +11,6 @@ namespace CustomerServiceCampaign.Domain.Entities
     public class State : Entity
     {
         public string StateName { get; set; }
-        public virtual ICollection<City> Cities { get; set; }
+        public virtual ICollection<Address> Addresses { get; set; }
     }
 }

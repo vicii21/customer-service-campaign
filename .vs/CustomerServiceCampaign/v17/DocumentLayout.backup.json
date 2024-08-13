@@ -3,56 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.dataaccess\\configurations\\entityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|solutionrelative:customerservicecampaign.dataaccess\\configurations\\entityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.dataaccess\\configurations\\personconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|solutionrelative:customerservicecampaign.dataaccess\\configurations\\personconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB1BBF3-AC1F-46FA-B870-8DEE11138DDB}|CustomerServiceCampaign.Domain\\CustomerServiceCampaign.Domain.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.domain\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB1BBF3-AC1F-46FA-B870-8DEE11138DDB}|CustomerServiceCampaign.Domain\\CustomerServiceCampaign.Domain.csproj|solutionrelative:customerservicecampaign.domain\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.API.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\jwt\\jwtmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.API.csproj|solutionrelative:customerservicecampaign\\jwt\\jwtmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\controllers\\databaseinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\controllers\\databaseinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.API.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.API.csproj|solutionrelative:customerservicecampaign\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\jwt\\jwtmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\jwt\\jwtmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\extensions\\containerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\extensions\\containerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\customerservicecampaign.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\customerservicecampaign.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\errorlogging\\bugsnagerrorlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\errorlogging\\bugsnagerrorlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.API.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\jwt\\tokenstorage\\inmemorytokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.API.csproj|solutionrelative:customerservicecampaign\\jwt\\tokenstorage\\inmemorytokenstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.API.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\jwt\\jwtactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.API.csproj|solutionrelative:customerservicecampaign\\jwt\\jwtactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\jwt\\unauthorizedactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\jwt\\unauthorizedactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\controllers\\databaseinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\controllers\\databaseinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB1BBF3-AC1F-46FA-B870-8DEE11138DDB}|CustomerServiceCampaign.Domain\\CustomerServiceCampaign.Domain.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB1BBF3-AC1F-46FA-B870-8DEE11138DDB}|CustomerServiceCampaign.Domain\\CustomerServiceCampaign.Domain.csproj|solutionrelative:customerservicecampaign.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB1BBF3-AC1F-46FA-B870-8DEE11138DDB}|CustomerServiceCampaign.Domain\\CustomerServiceCampaign.Domain.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.domain\\entities\\personcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB1BBF3-AC1F-46FA-B870-8DEE11138DDB}|CustomerServiceCampaign.Domain\\CustomerServiceCampaign.Domain.csproj|solutionrelative:customerservicecampaign.domain\\entities\\personcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB1BBF3-AC1F-46FA-B870-8DEE11138DDB}|CustomerServiceCampaign.Domain\\CustomerServiceCampaign.Domain.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.domain\\entities\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB1BBF3-AC1F-46FA-B870-8DEE11138DDB}|CustomerServiceCampaign.Domain\\CustomerServiceCampaign.Domain.csproj|solutionrelative:customerservicecampaign.domain\\entities\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\dto\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\dto\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.dataaccess\\configurations\\addressconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|solutionrelative:customerservicecampaign.dataaccess\\configurations\\addressconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.dataaccess\\configurations\\cityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|solutionrelative:customerservicecampaign.dataaccess\\configurations\\cityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.dataaccess\\configurations\\stateconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|solutionrelative:customerservicecampaign.dataaccess\\configurations\\stateconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\extensions\\validationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\extensions\\validationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C36CA0A9-AC17-4D97-A98C-CE10ECDD513F}|CustomerServiceCampaign\\CustomerServiceCampaign.csproj|solutionrelative:customerservicecampaign\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|c:\\users\\thinkpadl15\\source\\repos\\customerservicecampaign\\customerservicecampaign.dataaccess\\configurations\\entityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D70768-79B7-441F-9F58-23A20A9AAF9B}|CustomerServiceCampaign.DataAccess\\CustomerServiceCampaign.DataAccess.csproj|solutionrelative:customerservicecampaign.dataaccess\\configurations\\entityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,175 +82,241 @@
       "DocumentGroups": [
         {
           "DockedWidth": 245,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatabaseInputController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Controllers\\DatabaseInputController.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Controllers\\DatabaseInputController.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Controllers\\DatabaseInputController.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\Controllers\\DatabaseInputController.cs",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAAAHUBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T20:43:32.935Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContainerExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Extensions\\ContainerExtensions.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Extensions\\ContainerExtensions.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Extensions\\ContainerExtensions.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\Extensions\\ContainerExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T04:47:07.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BugSnagErrorLogger.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\ErrorLogging\\BugSnagErrorLogger.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\ErrorLogging\\BugSnagErrorLogger.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\ErrorLogging\\BugSnagErrorLogger.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\ErrorLogging\\BugSnagErrorLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T04:46:55.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnauthorizedActor.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\UnauthorizedActor.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Jwt\\UnauthorizedActor.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\UnauthorizedActor.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\Jwt\\UnauthorizedActor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T04:44:54.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PersonColor.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.Domain\\Entities\\PersonColor.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign.Domain\\Entities\\PersonColor.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.Domain\\Entities\\PersonColor.cs",
+              "RelativeToolTip": "CustomerServiceCampaign.Domain\\Entities\\PersonColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:23:36.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.Domain\\Entities\\Person.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign.Domain\\Entities\\Person.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.Domain\\Entities\\Person.cs",
+              "RelativeToolTip": "CustomerServiceCampaign.Domain\\Entities\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:23:32.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Color.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.Domain\\Entities\\Color.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign.Domain\\Entities\\Color.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.Domain\\Entities\\Color.cs",
+              "RelativeToolTip": "CustomerServiceCampaign.Domain\\Entities\\Color.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:23:21.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddressDto.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\DTO\\AddressDto.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\DTO\\AddressDto.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\DTO\\AddressDto.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\DTO\\AddressDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:09:04.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Program.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Program.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Program.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\Program.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:43:42.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PersonConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\PersonConfiguration.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign.DataAccess\\Configurations\\PersonConfiguration.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\PersonConfiguration.cs",
+              "RelativeToolTip": "CustomerServiceCampaign.DataAccess\\Configurations\\PersonConfiguration.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAEwDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:41:35.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddressConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\AddressConfiguration.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign.DataAccess\\Configurations\\AddressConfiguration.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\AddressConfiguration.cs",
+              "RelativeToolTip": "CustomerServiceCampaign.DataAccess\\Configurations\\AddressConfiguration.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswB8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:34:46.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\CityConfiguration.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign.DataAccess\\Configurations\\CityConfiguration.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\CityConfiguration.cs",
+              "RelativeToolTip": "CustomerServiceCampaign.DataAccess\\Configurations\\CityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:34:08.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StateConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\StateConfiguration.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign.DataAccess\\Configurations\\StateConfiguration.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\StateConfiguration.cs",
+              "RelativeToolTip": "CustomerServiceCampaign.DataAccess\\Configurations\\StateConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:28:54.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JwtManager.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\JwtManager.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Jwt\\JwtManager.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\JwtManager.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\Jwt\\JwtManager.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:01:01.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ValidationExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Extensions\\ValidationExtensions.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Extensions\\ValidationExtensions.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Extensions\\ValidationExtensions.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\Extensions\\ValidationExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:04:13.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CustomerServiceCampaign\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:01:25.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "EntityConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\EntityConfiguration.cs",
               "RelativeDocumentMoniker": "CustomerServiceCampaign.DataAccess\\Configurations\\EntityConfiguration.cs",
               "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.DataAccess\\Configurations\\EntityConfiguration.cs",
               "RelativeToolTip": "CustomerServiceCampaign.DataAccess\\Configurations\\EntityConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T20:54:41.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "CustomerServiceCampaign\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Controllers\\OrderController.cs",
               "RelativeToolTip": "CustomerServiceCampaign\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAhwDQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T20:54:33.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.Domain\\Entities\\Entity.cs",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign.Domain\\Entities\\Entity.cs",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign.Domain\\Entities\\Entity.cs*",
-              "RelativeToolTip": "CustomerServiceCampaign.Domain\\Entities\\Entity.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T20:53:34.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DatabaseInputController.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Controllers\\DatabaseInputController.cs",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Controllers\\DatabaseInputController.cs",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Controllers\\DatabaseInputController.cs",
-              "RelativeToolTip": "CustomerServiceCampaign\\Controllers\\DatabaseInputController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABkAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T20:43:32.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\appsettings.Development.json",
-              "RelativeToolTip": "CustomerServiceCampaign\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-12T20:38:38.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\appsettings.json",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\appsettings.json",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\appsettings.json",
-              "RelativeToolTip": "CustomerServiceCampaign\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-12T20:38:23.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppSettings.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\AppSettings.cs",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\AppSettings.cs",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\AppSettings.cs",
-              "RelativeToolTip": "CustomerServiceCampaign\\AppSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T20:30:01.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ContainerExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Extensions\\ContainerExtensions.cs",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Extensions\\ContainerExtensions.cs",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Extensions\\ContainerExtensions.cs",
-              "RelativeToolTip": "CustomerServiceCampaign\\Extensions\\ContainerExtensions.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T20:07:38.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomerServiceCampaign.csproj",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\CustomerServiceCampaign.csproj",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\CustomerServiceCampaign.csproj",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\CustomerServiceCampaign.csproj",
-              "RelativeToolTip": "CustomerServiceCampaign\\CustomerServiceCampaign.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-12T19:53:06.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Program.cs",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Program.cs",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Program.cs",
-              "RelativeToolTip": "CustomerServiceCampaign\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:51:05.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InMemoryTokenStorage.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\TokenStorage\\InMemoryTokenStorage.cs",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Jwt\\TokenStorage\\InMemoryTokenStorage.cs",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\TokenStorage\\InMemoryTokenStorage.cs",
-              "RelativeToolTip": "CustomerServiceCampaign\\Jwt\\TokenStorage\\InMemoryTokenStorage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:29:44.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "JwtManager.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\JwtManager.cs",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Jwt\\JwtManager.cs",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\JwtManager.cs",
-              "RelativeToolTip": "CustomerServiceCampaign\\Jwt\\JwtManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:29:47.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "JwtActor.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\JwtActor.cs",
-              "RelativeDocumentMoniker": "CustomerServiceCampaign\\Jwt\\JwtActor.cs",
-              "ToolTip": "C:\\Users\\ThinkPadL15\\source\\repos\\CustomerServiceCampaign\\CustomerServiceCampaign\\Jwt\\JwtActor.cs",
-              "RelativeToolTip": "CustomerServiceCampaign\\Jwt\\JwtActor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:08:12.226Z",
               "EditorCaption": ""
             }
           ]

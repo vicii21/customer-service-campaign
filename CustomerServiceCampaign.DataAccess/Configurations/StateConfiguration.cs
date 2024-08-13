@@ -14,7 +14,6 @@ namespace CustomerServiceCampaign.DataAccess.Configurations
         protected override void ConfigureEntity(EntityTypeBuilder<State> builder)
         {
             builder.Property(e => e.StateName).IsRequired().HasColumnName("state_name");
-            builder.HasIndex(e => e.StateName).IsUnique();
         }
     }
 }

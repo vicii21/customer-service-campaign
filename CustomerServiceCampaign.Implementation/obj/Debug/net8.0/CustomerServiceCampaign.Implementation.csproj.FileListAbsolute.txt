@@ -17,3 +17,4 @@ C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaig
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Implementation\obj\Debug\net8.0\refint\CustomerServiceCampaign.Implementation.dll
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Implementation\obj\Debug\net8.0\CustomerServiceCampaign.Implementation.pdb
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Implementation\obj\Debug\net8.0\ref\CustomerServiceCampaign.Implementation.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Implementation\obj\Debug\net8.0\CustomerServiceCampaign.Implementation.sourcelink.json

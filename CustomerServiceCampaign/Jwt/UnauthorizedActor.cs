@@ -10,6 +10,6 @@ namespace CustomerServiceCampaign.API.Jwt
 
         public string Email => "";
 
-        public IEnumerable<int> AllowedUseCases => new List<int> { }; // TODO - add
+        public IEnumerable<int> AllowedUseCases => new List<int> { };
     }
 }

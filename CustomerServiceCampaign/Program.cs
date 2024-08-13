@@ -15,18 +15,13 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Bind settings from configuration
 var appSettings = new AppSettings();
 builder.Configuration.Bind(appSettings);
 
 builder.Services.AddSingleton(appSettings.Jwt);
 
-//builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddSwaggerGen();
 
-// Add services to the container
 builder.Services.AddTransient<CustomerServiceCampaignContext>(e =>
 {
     var options = new DbContextOptionsBuilder<CustomerServiceCampaignContext>()
@@ -121,7 +116,6 @@ builder.Services.AddAuthentication(auth =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

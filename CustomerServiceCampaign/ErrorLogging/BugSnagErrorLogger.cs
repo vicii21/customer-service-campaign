@@ -14,8 +14,6 @@ namespace CustomerServiceCampaign.API.ErrorLogging
 
         public void Log(AppError error)
         {
-            //_bugsnag.Notify(error.Exception);
-
             _bugsnag.Notify(error.Exception, (report) => {
                 report.Event.Metadata.Add("Error", new Dictionary<string, string> {
                     { "user", error.Username },

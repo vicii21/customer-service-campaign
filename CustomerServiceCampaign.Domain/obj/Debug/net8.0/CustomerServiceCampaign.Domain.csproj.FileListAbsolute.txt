@@ -9,3 +9,4 @@ C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaig
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Domain\obj\Debug\net8.0\refint\CustomerServiceCampaign.Domain.dll
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Domain\obj\Debug\net8.0\CustomerServiceCampaign.Domain.pdb
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Domain\obj\Debug\net8.0\ref\CustomerServiceCampaign.Domain.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.Domain\obj\Debug\net8.0\CustomerServiceCampaign.Domain.sourcelink.json

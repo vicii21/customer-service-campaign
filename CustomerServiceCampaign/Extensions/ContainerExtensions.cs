@@ -26,8 +26,6 @@ namespace CustomerServiceCampaign.Application.Extensions
         {
             services.AddTransient<ICustomerDiscountCommand, EfCustomerDiscountCommand>();
             services.AddTransient<CustomerDiscountValidator>();
-            //services.AddTransient<UseCaseHandler>();
-            //services.AddTransient<IUseCaseLogger, SPUseCaseLogger>();
         }
 
         public static string ExtractTokenClaim(this HttpRequest request, string claimType)

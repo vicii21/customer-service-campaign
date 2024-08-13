@@ -30,11 +30,12 @@ namespace CustomerServiceCampaign.API.Controllers
             return Ok(new { newToken });
         }
 
+        // DELETE: Invalidate JWT token
         [Authorize]
         [HttpDelete]
         public IActionResult Delete([FromServices] ITokenStorage storage)
         {
-            var tokenId = this.Request.ExtractTokenClaim("jti"); // "jti" is typically the claim for JWT ID
+            var tokenId = this.Request.ExtractTokenClaim("jti");
 
             if (tokenId != null)
             {
@@ -43,20 +44,5 @@ namespace CustomerServiceCampaign.API.Controllers
 
             return NoContent();
         }
-
-        //[Authorize]
-        //[HttpDelete]
-        //public IActionResult InvalidateToken([FromServices] ITokenStorage tokenStorage)
-        //{
-        //    var handler = new JwtSecurityTokenHandler();
-        //    var header = HttpContext.Request.Headers["Authorization"];
-        //    var token = header.ToString().Split("Bearer ")[1];
-        //    var tokenObject = handler.ReadJwtToken(token);
-
-        //    string jti = tokenObject.Claims.FirstOrDefault(e => e.Type == "jti").Value;
-        //    tokenStorage.InvalidateToken(jti);
-
-        //    return NoContent();
-        //}
     }
 }

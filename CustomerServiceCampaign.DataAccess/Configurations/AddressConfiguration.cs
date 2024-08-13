@@ -23,6 +23,13 @@ namespace CustomerServiceCampaign.DataAccess.Configurations
                 .WithMany(c => c.Addresses)
                 .HasForeignKey(c => c.CityId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Property(e => e.StateId).HasColumnName("state_id");
+
+            builder.HasOne(e => e.State)
+                .WithMany(s => s.Addresses)
+                .HasForeignKey(e => e.StateId)
+                .IsRequired();
         }
     }
 }

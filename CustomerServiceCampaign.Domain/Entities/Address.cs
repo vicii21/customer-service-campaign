@@ -13,8 +13,10 @@ namespace CustomerServiceCampaign.Domain.Entities
         public string Street { get; set; }
         public string Zip { get; set; }
         public int CityId { get; set; }
+        public int StateId { get; set; }
 
         public virtual City City { get; set; }
+        public virtual State State { get; set; }
         public virtual ICollection<Person> HomePersons { get; set; }
         public virtual ICollection<Person> OfficePersons { get; set; }
     }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomerServiceCampaign.DataAccess.Migrations
 {
     [DbContext(typeof(CustomerServiceCampaignContext))]
-    [Migration("20240809194120_InitialMigration")]
+    [Migration("20240813021329_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -47,8 +47,12 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
+
+                    b.Property<int>("StateId")
+                        .HasColumnType("int")
+                        .HasColumnName("state_id");
 
                     b.Property<string>("Street")
                         .IsRequired()
@@ -58,14 +62,17 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Zip")
+                    b.Property<string>("Zip")
+                        .IsRequired()
                         .HasMaxLength(5)
-                        .HasColumnType("int")
+                        .HasColumnType("nvarchar(5)")
                         .HasColumnName("zip");
 
                     b.HasKey("ID");
 
                     b.HasIndex("CityId");
+
+                    b.HasIndex("StateId");
 
                     b.ToTable("address");
                 });
@@ -88,8 +95,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<string>("Notes")
                         .HasColumnType("nvarchar(max)")
@@ -99,8 +106,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .HasColumnType("int")
                         .HasColumnName("person_id");
 
-                    b.Property<int?>("Salary")
-                        .HasColumnType("int")
+                    b.Property<long?>("Salary")
+                        .HasColumnType("bigint")
                         .HasColumnName("salary");
 
                     b.Property<string>("Title")
@@ -143,19 +150,13 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
-
-                    b.Property<int>("StateId")
-                        .HasColumnType("int")
-                        .HasColumnName("state_id");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("StateId");
 
                     b.ToTable("city");
                 });
@@ -183,8 +184,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
@@ -221,8 +222,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -270,8 +271,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<int>("PersonId")
                         .HasColumnType("int")
@@ -320,8 +321,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<bool>("IsUsed")
                         .HasColumnType("bit");
@@ -366,8 +367,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
@@ -411,8 +412,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<int>("ServiceId")
                         .HasColumnType("int")
@@ -449,8 +450,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .HasColumnName("created_at")
                         .HasDefaultValueSql("GETDATE()");
 
-                    b.Property<int>("DOB")
-                        .HasColumnType("int")
+                    b.Property<DateTime>("DOB")
+                        .HasColumnType("datetime2")
                         .HasColumnName("date_of_birth");
 
                     b.Property<int>("HomeAddressId")
@@ -460,8 +461,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -493,9 +494,7 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.HasIndex("SSN")
                         .IsUnique();
 
-                    b.HasIndex("SpouseId")
-                        .IsUnique()
-                        .HasFilter("[spouse_id] IS NOT NULL");
+                    b.HasIndex("SpouseId");
 
                     b.ToTable("person");
                 });
@@ -560,15 +559,16 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)")
                         .HasColumnName("price");
 
-                    b.Property<int>("ServiceName")
-                        .HasColumnType("int")
+                    b.Property<string>("ServiceName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)")
                         .HasColumnName("service_name");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -600,21 +600,18 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasDefaultValue(true)
-                        .HasColumnName("is_active");
+                        .HasColumnName("is_active")
+                        .HasDefaultValueSql("1");
 
                     b.Property<string>("StateName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("state_name");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("StateName")
-                        .IsUnique();
 
                     b.ToTable("state");
                 });
@@ -627,7 +624,15 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("CustomerServiceCampaign.Domain.Entities.State", "State")
+                        .WithMany("Addresses")
+                        .HasForeignKey("StateId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("City");
+
+                    b.Navigation("State");
                 });
 
             modelBuilder.Entity("CustomerServiceCampaign.Domain.Entities.Agent", b =>
@@ -639,17 +644,6 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Person");
-                });
-
-            modelBuilder.Entity("CustomerServiceCampaign.Domain.Entities.City", b =>
-                {
-                    b.HasOne("CustomerServiceCampaign.Domain.Entities.State", "State")
-                        .WithMany("Cities")
-                        .HasForeignKey("StateId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("State");
                 });
 
             modelBuilder.Entity("CustomerServiceCampaign.Domain.Entities.Credentials", b =>
@@ -726,8 +720,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("CustomerServiceCampaign.Domain.Entities.Person", "Spouse")
-                        .WithOne()
-                        .HasForeignKey("CustomerServiceCampaign.Domain.Entities.Person", "SpouseId")
+                        .WithMany("SpousePersons")
+                        .HasForeignKey("SpouseId")
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("HomeAddress");
@@ -814,6 +808,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("PersonUseCases");
+
+                    b.Navigation("SpousePersons");
                 });
 
             modelBuilder.Entity("CustomerServiceCampaign.Domain.Entities.Service", b =>
@@ -823,7 +819,7 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
 
             modelBuilder.Entity("CustomerServiceCampaign.Domain.Entities.State", b =>
                 {
-                    b.Navigation("Cities");
+                    b.Navigation("Addresses");
                 });
 #pragma warning restore 612, 618
         }

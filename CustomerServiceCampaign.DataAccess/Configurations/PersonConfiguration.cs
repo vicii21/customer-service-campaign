@@ -40,11 +40,17 @@ namespace CustomerServiceCampaign.DataAccess.Configurations
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Property(e => e.SpouseId).HasColumnName("spouse_id");
-            builder.HasOne(p => p.Spouse)
-                .WithOne()
-                .HasForeignKey<Person>(p => p.SpouseId)
+            builder.HasOne(e => e.Spouse)
+                .WithMany(u => u.SpousePersons)
+                .HasForeignKey(e => e.SpouseId)
                 .OnDelete(DeleteBehavior.Restrict);
-            builder.HasIndex(e => e.SpouseId).IsUnique();
+
+            //builder.Property(e => e.SpouseId).HasColumnName("spouse_id");
+            //builder.HasOne(p => p.Spouse)
+            //    .WithOne()
+            //    .HasForeignKey<Person>(p => p.SpouseId)
+            //    .OnDelete(DeleteBehavior.Restrict);
+            //builder.HasIndex(e => e.SpouseId).IsUnique();
         }
     }
 }

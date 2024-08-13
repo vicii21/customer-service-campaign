@@ -23,6 +23,7 @@ namespace CustomerServiceCampaign.Domain.Entities
         public virtual Address OfficeAddress { get; set; }
         public virtual Credentials Credentials { get; set; }
 
+        public ICollection<Person> SpousePersons { get; set; } = new HashSet<Person>();
         public virtual Agent Agent { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual ICollection<PersonColor> ColorPerson { get; set; }

@@ -427,3 +427,4 @@ C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaig
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign\obj\Debug\net8.0\CustomerServiceCampaign.pdb
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign\obj\Debug\net8.0\CustomerServiceCampaign.genruntimeconfig.cache
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign\obj\Debug\net8.0\ref\CustomerServiceCampaign.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign\obj\Debug\net8.0\CustomerServiceCampaign.sourcelink.json

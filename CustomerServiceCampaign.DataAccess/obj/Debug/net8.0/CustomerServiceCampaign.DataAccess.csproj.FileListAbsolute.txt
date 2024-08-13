@@ -15,3 +15,4 @@ C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaig
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.pdb
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.genruntimeconfig.cache
 C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\ref\CustomerServiceCampaign.DataAccess.dll
+C:\Users\ThinkPadL15\source\repos\CustomerServiceCampaign\CustomerServiceCampaign.DataAccess\obj\Debug\net8.0\CustomerServiceCampaign.DataAccess.sourcelink.json

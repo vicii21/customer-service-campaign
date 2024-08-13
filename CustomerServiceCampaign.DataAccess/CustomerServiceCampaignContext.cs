@@ -22,7 +22,7 @@ namespace CustomerServiceCampaign.DataAccess
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=localhost;Initial Catalog=CustomerServiceCampaign;TrustServerCertificate=True;Integrated security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=localhost;Initial Catalog=CustomerServiceCampaign;TrustServerCertificate=True;Integrated security=True").EnableSensitiveDataLogging();
             base.OnConfiguring(optionsBuilder);
         }
 

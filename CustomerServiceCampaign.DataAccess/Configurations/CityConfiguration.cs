@@ -14,13 +14,6 @@ namespace CustomerServiceCampaign.DataAccess.Configurations
         protected override void ConfigureEntity(EntityTypeBuilder<City> builder)
         {
             builder.Property(e => e.CityName).IsRequired().HasColumnName("city_name");
-
-            builder.Property(e => e.StateId).HasColumnName("state_id");
-
-            builder.HasOne(e => e.State)
-                .WithMany(s => s.Cities)
-                .HasForeignKey(e => e.StateId)
-                .IsRequired();
         }
     }
 }

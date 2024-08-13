@@ -7,6 +7,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using Microsoft.OpenApi.Extensions;
 using SOAPWebService;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using System.Drawing;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol;
+using NuGet.Packaging.Signing;
 
 namespace CustomerServiceCampaign.API.Controllers
 {
@@ -23,6 +28,7 @@ namespace CustomerServiceCampaign.API.Controllers
 
         // POST: Import data from SOAP Web Service into Database
         [HttpPost]
+        //[Authorize]
         public async Task<IActionResult> ImportDBDataFromSOAP()
         {
             try
@@ -69,6 +75,7 @@ namespace CustomerServiceCampaign.API.Controllers
                 {
                     foreach (var color in person.FavoriteColors)
                     {
+                        if (_context.Color.Any(e => e.ColorName == color)) continue;
                         colors.Add(color);
                     }
                 }
@@ -81,7 +88,7 @@ namespace CustomerServiceCampaign.API.Controllers
         {
             foreach (var color in colors)
             {
-                _context.Color.Add(new Color { ColorName = color });
+                _context.Color.Add(new Domain.Entities.Color { ColorName = color });
             }
             _context.SaveChanges();
         }
@@ -95,10 +102,12 @@ namespace CustomerServiceCampaign.API.Controllers
                 if (person == null) break;
                 if (person.Home?.State != null)
                 {
+                    if (_context.State.Any(e => e.StateName == person.Home.State)) continue;
                     states.Add(person.Home.State);
                 }
                 if (person.Office?.State != null)
                 {
+                    if (_context.State.Any(e => e.StateName == person.Office.State)) continue;
                     states.Add(person.Office.State);
                 }
             }
@@ -124,10 +133,12 @@ namespace CustomerServiceCampaign.API.Controllers
                 if (person == null) break;
                 if (person.Home?.City != null)
                 {
+                    if (_context.City.Any(e => e.CityName == person.Home.City)) continue;
                     cities.Add(person.Home.City);
                 }
                 if (person.Office?.City != null)
                 {
+                    if (_context.City.Any(e => e.CityName == person.Office.City)) continue;
                     cities.Add(person.Office.City);
                 }
             }
@@ -137,11 +148,18 @@ namespace CustomerServiceCampaign.API.Controllers
 
         private void SaveCities(IEnumerable<string> cities)
         {
-            foreach (var city in cities)
+            try
             {
-                _context.City.Add(new City { CityName = city });
+                foreach (var city in cities)
+                {
+                    _context.City.Add(new City { CityName = city });
+                }
+                _context.SaveChanges();
+            } catch (System.Exception e)
+            {
+                Console.WriteLine(e);
             }
-            _context.SaveChanges();
+
         }
 
         private Domain.Entities.Address CreateAddress(SOAPWebService.Address address)
@@ -150,6 +168,7 @@ namespace CustomerServiceCampaign.API.Controllers
             {
                 Street = address.Street,
                 City = _context.City.FirstOrDefault(c => c.CityName == address.City),
+                State = _context.State.FirstOrDefault(c => c.StateName == address.State),
                 Zip = address.Zip,
             };
         }
@@ -161,7 +180,7 @@ namespace CustomerServiceCampaign.API.Controllers
             {
                 var person = client.FindPersonAsync(i.ToString()).Result;
                 if (person == null) break;
-
+                if (_context.Person.Any(e => e.SSN == person.SSN)) continue;
                 var newPerson = new Domain.Entities.Person
                 {
                     Name = person.Name,
@@ -169,12 +188,12 @@ namespace CustomerServiceCampaign.API.Controllers
                     DOB = person.DOB,
                     HomeAddress = CreateAddress(person.Home),
                     OfficeAddress = CreateAddress(person.Office),
-                    SpouseId = GetSpouseId(person),
+                    SpouseId = (person.Spouse != null ? _context.Person.Where(x => x.Name == person.Spouse.Name)
+                    .Select(x => x.ID)
+                    .FirstOrDefault() : null),
                     Age = (int)person.Age,
                 };
 
-                _context.Person.Add(newPerson);
-                _context.SaveChanges();
                 people.Add(newPerson);
             }
             return people;
@@ -183,34 +202,74 @@ namespace CustomerServiceCampaign.API.Controllers
         private void SavePeople(List<Domain.Entities.Person> people)
         {
             _context.Person.AddRange(people);
+
+            foreach (var person in people)
+            {
+                if (person.SpouseId.HasValue)
+                {
+                    var existingPerson = _context.Person.Find(person.ID);
+                    if (existingPerson != null)
+                    {
+                        existingPerson.SpouseId = person.SpouseId;
+                        _context.Entry(existingPerson).State = EntityState.Modified;
+                    }
+                }
+            }
             _context.SaveChanges();
         }
 
+
+        //private ICollection<Domain.Entities.PersonColor> ExtractPersonColors(IEnumerable<string> favoriteColors)
+        //{
+        //    if (favoriteColors == null) return new HashSet<Domain.Entities.PersonColor>();
+
+        //    var personColors = new HashSet<Domain.Entities.PersonColor>();
+
+        //    foreach (var colorName in favoriteColors)
+        //    {
+        //        var color = _context.Color.FirstOrDefault(c => c.ColorName == colorName);
+
+        //        if (color == null)
+        //        {
+        //            color = new Domain.Entities.Color { ColorName = colorName };
+        //            _context.Color.Add(color);
+        //            _context.SaveChanges();
+        //        }
+
+        //        personColors.Add(new Domain.Entities.PersonColor
+        //        {
+        //            ColorId = color.ID,
+        //        });
+        //    }
+
+        //    return personColors;
+        //}
+
         private int? GetSpouseId(SOAPWebService.Person person)
         {
-            if (person.Spouse != null)
-            {
-                return _context.Person.FirstOrDefault(p => p.Name == person.Spouse.Name)?.ID;
-            }
-            return (int?)null;
+            return (person.Spouse != null ? _context.Person.Where(e => e.Name == person.Spouse.Name)
+                                                                                 .Select(e => e.ID)
+                                                                                 .FirstOrDefault() : null);
         }
 
         private List<Agent> ExtractAgents(List<Domain.Entities.Person> people, SOAPDemoSoapClient client)
         {
             var agents = new List<Agent>();
-            foreach (var person in people)
-            {
-                var foundPerson = client.FindPersonAsync(person.ID.ToString()).Result;
-                if (foundPerson is SOAPWebService.Employee employee)
+
+            foreach (var person in people) { 
+                if (person == null) continue;
+
+                if (person != null && !_context.Agent.Any(e => e.Person.SSN == person.SSN))
                 {
-                    var agent = new Agent
+                    var newAgent = new Agent
                     {
-                        PersonId = person.ID,
-                        Title = employee.Title,
-                        Salary = employee.Salary,
-                        Notes = employee.Notes,
+                        Person = person,
+                        Title = person.Agent.Title,
+                        Salary = person.Agent.Salary,
+                        Notes = person.Agent.Notes
                     };
-                    agents.Add(agent);
+
+                    agents.Add(newAgent);
                 }
             }
             return agents;
@@ -218,8 +277,15 @@ namespace CustomerServiceCampaign.API.Controllers
 
         private void SaveAgents(List<Agent> agents)
         {
-            _context.Agent.AddRange(agents);
-            _context.SaveChanges();
+            var validPersonIds = _context.Person.Select(p => p.ID).ToHashSet();
+
+            var validAgents = agents.Where(a => validPersonIds.Contains(a.PersonId)).ToList();
+
+            if (validAgents.Any())
+            {
+                _context.Agent.AddRange(validAgents);
+                _context.SaveChanges();
+            }
         }
 
         private List<Customer> ExtractCustomers(List<Domain.Entities.Person> people, SOAPDemoSoapClient client)
@@ -228,6 +294,7 @@ namespace CustomerServiceCampaign.API.Controllers
             foreach (var person in people)
             {
                 var foundPerson = client.FindPersonAsync(person.ID.ToString()).Result;
+                if (_context.Customer.Any(e => e.PersonId == person.ID)) continue;
                 if (foundPerson is not SOAPWebService.Employee employee)
                 {
                     var customer = new Customer

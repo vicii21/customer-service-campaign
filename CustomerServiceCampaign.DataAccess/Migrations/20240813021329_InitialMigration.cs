@@ -12,13 +12,29 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "city",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    city_name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
+                    created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_city", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "color",
                 columns: table => new
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     color_name = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -37,7 +53,7 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     actor = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     use_case_name = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
                     use_case_data = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -52,9 +68,9 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    service_name = table.Column<int>(type: "int", nullable: false),
+                    service_name = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -69,8 +85,8 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    state_name = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    state_name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -80,38 +96,16 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "city",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    city_name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    state_id = table.Column<int>(type: "int", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
-                    created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_city", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_city_state_state_id",
-                        column: x => x.state_id,
-                        principalTable: "state",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "address",
                 columns: table => new
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     street = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    zip = table.Column<int>(type: "int", maxLength: 5, nullable: false),
+                    zip = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
                     city_id = table.Column<int>(type: "int", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    state_id = table.Column<int>(type: "int", nullable: false),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -124,6 +118,12 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         principalTable: "city",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_address_state_state_id",
+                        column: x => x.state_id,
+                        principalTable: "state",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -134,12 +134,12 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     social_security_number = table.Column<string>(type: "char(11)", nullable: false),
-                    date_of_birth = table.Column<int>(type: "int", nullable: false),
+                    date_of_birth = table.Column<DateTime>(type: "datetime2", nullable: false),
                     age = table.Column<int>(type: "int", nullable: false),
                     spouse_id = table.Column<int>(type: "int", nullable: true),
                     house_address_id = table.Column<int>(type: "int", nullable: false),
                     office_address_id = table.Column<int>(type: "int", nullable: true),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -173,10 +173,10 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     title = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
-                    salary = table.Column<int>(type: "int", nullable: true),
+                    salary = table.Column<long>(type: "bigint", nullable: true),
                     notes = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     person_id = table.Column<int>(type: "int", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -200,7 +200,7 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     email = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     password = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
                     person_id = table.Column<int>(type: "int", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -223,7 +223,7 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     customer_discount_id = table.Column<int>(type: "int", nullable: false),
                     person_id = table.Column<int>(type: "int", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -295,7 +295,7 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                     DiscountExpires = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AgentId = table.Column<int>(type: "int", nullable: false),
                     CustomerId = table.Column<int>(type: "int", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -324,7 +324,7 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     customer_discount_id = table.Column<int>(type: "int", nullable: false),
                     service_id = table.Column<int>(type: "int", nullable: false),
-                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    is_active = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "1"),
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -351,15 +351,15 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                 column: "city_id");
 
             migrationBuilder.CreateIndex(
+                name: "IX_address_state_id",
+                table: "address",
+                column: "state_id");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_agent_person_id",
                 table: "agent",
                 column: "person_id",
                 unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_city_state_id",
-                table: "city",
-                column: "state_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_color_color_name",
@@ -425,9 +425,7 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_person_spouse_id",
                 table: "person",
-                column: "spouse_id",
-                unique: true,
-                filter: "[spouse_id] IS NOT NULL");
+                column: "spouse_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_person_color_ColorId",
@@ -438,12 +436,6 @@ namespace CustomerServiceCampaign.DataAccess.Migrations
                 name: "IX_service_service_name",
                 table: "service",
                 column: "service_name",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_state_state_name",
-                table: "state",
-                column: "state_name",
                 unique: true);
         }
 
